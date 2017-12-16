@@ -1,0 +1,69 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+img {
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#card {
+  width: 400px;
+  position: static;
+  display: inline-grid;
+  padding: 15px;
+  margin: 15px;
+}
+.listItems {
+  color: #333;
+  background-color: rgba(0,0,255,.5);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+#weatherCard {
+  width: 230px;
+  position: static;
+  display: inline-grid;
+  padding: 15px;
+  margin: 15px;
+  border-style: solid;
+  border-top: 10px solid yellow;
+  background-color: blue;
+  color: white;
+
+}
+#wCardIcon {
+  display: inline-flex;
+}
+#wCardSum {
+  font-style: bold;
+}
