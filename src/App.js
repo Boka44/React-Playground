@@ -5,6 +5,9 @@ import { Name } from './components/name';
 import { CardList } from './components/card';
 import { Button } from './components/button';
 import { WeatherView } from './components/weatherView';
+import { Provider } from 'react-redux';
+import Todos from './components/todoRedux';
+import store from './store';
 
 
 
@@ -24,6 +27,10 @@ class App extends Component {
         <Name />
         <CardList />
         <Button />
+
+        <Provider store={store}>
+          <Todos/>
+        </Provider>
         
       </div>
     );

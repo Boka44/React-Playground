@@ -174,13 +174,15 @@ export class WeatherCard extends Component {
     }
 
     fetchData(lat, long){
+      const myAPI = 'https://blooming-earth-34077.herokuapp.com/city/sanFran';
       const weatherRequest = `https://api.darksky.net/forecast/fbdca57e2ef5b4ac0f12e3d3779f090e/${lat},${long}`;
       console.log(weatherRequest);
-      fetch(weatherRequest).then( data => data.json() ).then( data => {
+      fetch(myAPI).then( data => data.json() ).then( data => {
             this.setState({
                 info: data,
                 requestFailed: true
             });
+            console.log(data);
         }, () => {
             this.setState({
             requestFailed: true

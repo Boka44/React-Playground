@@ -35,7 +35,7 @@ export class WeatherForm extends Component {
   onSubmit = (e) => {
     e.preventDefault();
     if (this.state.lat.length == 0 || this.state.long.length == 0) {
-        alert("You must enter something");
+        alert("You must enter something in both fields!");
     }else{
       this.props.onSubmit(this.state.lat, this.state.long)
     }
